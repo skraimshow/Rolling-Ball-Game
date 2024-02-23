@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
             Score++;
             SetScoreText();
 
-            if(Score > 3)
+            if(Score > 5)
             {
                 Wall.gameObject.SetActive(false);
             }
@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour
     {
         ScoreText.text = "Score " + Score.ToString();
 
-        if (Score >= 5) 
+        if (Score >= 10) 
         {
             WinText.text = "You have won the game! Press R to restart or ESC to quit the game!";
         }
